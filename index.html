@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help & Support</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: linear-gradient(120deg, #f0f4ff, #ffffff);
+      color: #1e1e1e;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 24px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .logo-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .logo-title img {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 10px;
+    }
+
+    .logo-title h1 {
+      font-size: 30px;
+      font-weight: 700;
+      color: #1E6CE3;
+      margin: 0;
+    }
+
+    .page-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #1E88E5;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: 600;
+      color: #444;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      border-left: 4px solid #1E88E5;
+      padding-left: 12px;
+    }
+
+    .faq-item, .contact-item {
+      margin: 16px 0;
+      background-color: #f7f9fc;
+      border-left: 4px solid #1E88E5;
+      padding: 16px;
+      border-radius: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .faq-item:hover, .contact-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .faq-question {
+      font-weight: 600;
+      font-size: 16px;
+      color: #222;
+    }
+
+    .faq-answer {
+      font-size: 15px;
+      margin-top: 6px;
+      color: #555;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .contact-icon {
+      font-size: 20px;
+      color: #1E88E5;
+      margin-right: 12px;
+    }
+
+    .contact-text {
+      font-size: 15px;
+      color: #333;
+    }
+
+    a {
+      color: #1E88E5;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .page-title, .section-title {
+        font-size: 20px;
+      }
+
+      .logo-title h1 {
+        font-size: 24px;
+      }
+
+      .faq-item, .contact-item {
+        padding: 12px;
+      }
+    }
+  </style>
+  <script>
+    function makeCall() {
+      window.location.href = 'tel:+940740411154';
+    }
+
+    function sendEmail() {
+      window.location.href = 'mailto:support@example.com';
+    }
+
+    function openWebsite() {
+      window.open('https://www.example.com', '_blank');
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Logo and Dream Land Heading -->
+    <div class="logo-title">
+      <img src="movie_logo.png" alt="Movie Logo" />
+      <h1>Dream Land</h1>
+    </div>
+
+    <!-- Help & Support Title (left-aligned) -->
+    <div class="page-title">Help & Support</div>
+
+    <!-- FAQ Section -->
+    <div class="section-title">FAQs</div>
+
+    <div class="faq-item">
+      <div class="faq-question">1. How do I reset my password?</div>
+      <div class="faq-answer">Go to the login page and click on "Forgot Password" to receive a reset link.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">2. How do I contact support?</div>
+      <div class="faq-answer">You can reach us via email or phone listed below.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">3. Can I change my email address?</div>
+      <div class="faq-answer">Yes, go to your profile settings to update your email address.</div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section-title">Contact Us</div>
+
+    <div class="contact-item" onclick="sendEmail()">
+      <span class="contact-icon">&#9993;</span>
+      <span class="contact-text">Email: support@DreamLand.com</span>
+    </div>
+
+    <div class="contact-item" onclick="makeCall()">
+      <span class="contact-icon">&#9742;</span>
+      <span class="contact-text">Phone: +94 740411154</span>
+    </div>
+
+    <div class="contact-item" onclick="openWebsite()">
+      <span class="contact-icon">&#127760;</span>
+      <span class="contact-text">www.DeramLand.com</span>
+    </div>
+  </div>
+</body>
+</html>
